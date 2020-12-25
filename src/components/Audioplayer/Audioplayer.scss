@@ -1,0 +1,53 @@
+#audioplayer{
+    .rhap_container{
+        background-color: #000;
+        .rhap_play-pause-button svg{
+            color: #ecc707;
+        }
+        .rhap_time{
+            color: #fff;
+        }
+        svg{
+            color: #fff;
+        }
+        .rhap_progress-indicator{
+            background-color: #ecc707;
+        }
+        .rhap_progress-filled{
+            background-color: #ecc707; 
+        }
+        .rhap_volume-indicator{
+            background-color: #ecc707;
+        }
+        .rhap_header {
+            color: #fff;
+            font-size: 16px;
+            position: absolute;
+            bottom: 30px;
+            left: 10%;
+            font-weight: bold;
+            top: 45px;
+        }
+        .rhap_footer {
+            margin-top: 5px;
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            cursor: pointer;
+            svg{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #audioplayer{
+        .rhap_footer{
+            display: none;
+        }
+        .rhap_header{
+            display: none;
+        }
+    }
+}

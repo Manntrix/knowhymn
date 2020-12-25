@@ -1,0 +1,87 @@
+#header{
+    position: absolute;
+    width: 220px;
+    .pro-sidebar{
+        height: 100vh;
+    }
+    .closemenu{
+        
+        color: #fff;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+        
+        line-height: 20px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 22px;
+        top: 13%;
+        cursor: pointer;
+        img{
+            width: 32px;
+        }
+    }
+    .pro-sidebar{
+        width: 100%;
+        min-width: 100%;
+    }
+    .pro-sidebar.collapsed {
+        width: 80px;
+        min-width: 80px;
+    }
+    .pro-sidebar-inner{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+        .pro-sidebar-layout{
+            .logotext{
+                p{
+                    font-size: 16px;
+                    padding: 0 20px;
+                }
+            }
+            ul{
+                padding: 0 5px;
+                .pro-inner-item{
+                    color: #000;
+                   
+                    margin: 10px 0px;
+                    font-weight: bold;
+                    .pro-icon-wrapper{
+                        background-color: #fbf4cd;
+                        color: #000;
+                        border-radius: 3px;
+                        .pro-item-content{
+                            color: #000;
+                        }
+                    }
+                    .pro-item-content{
+                        a{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            overflow-y: hidden;
+         
+                .active{
+                
+                    background-image: linear-gradient( 0deg, rgb(254,206,0) 0%, rgb(255,225,114) 100%);
+                }
+            .pro-menu-item{
+                &:hover{
+                    background-image: linear-gradient( 0deg, rgb(254,206,0) 0%, rgb(255,225,114) 100%);
+                }
+            }
+        }
+    }
+    .logo {
+        padding: 20px;
+    }
+      
+}
+
+@media only screen and (max-width: 720px) {
+    html{
+        overflow: hidden;
+    }
+}

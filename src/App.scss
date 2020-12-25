@@ -1,0 +1,39 @@
+#app{
+    .container-fluid{
+        padding-left: unset;
+    }
+    .scrollable {
+        overflow: scroll;
+        height: calc(100vh - 85px);
+        &::-webkit-scrollbar {
+            width: 5px;
+          }
+    }
+    .mobilead{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        height: 85px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #app{
+    .footer {
+        width: 100% !important;
+    }
+    .container-fluid{
+        padding: unset;
+    }
+    .mobilead{
+        padding: 0 10px;
+    }
+}
+}

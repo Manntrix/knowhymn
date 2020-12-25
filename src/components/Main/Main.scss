@@ -1,0 +1,58 @@
+#maincontent{
+    padding: 20px 10px;
+    .popularsongs{
+        position: relative;
+        h3{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        h6{
+            font-size: 14px;
+        }
+        .viewmore{
+                position: absolute;
+                right: 0;
+                top: 0; 
+                background: #000;
+                padding: 2px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                p{
+                    margin-bottom: unset;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+                }
+        }
+    }
+    .searchbox{
+        position: relative;
+        input{
+            &::placeholder{
+                font-weight: bold;
+            }
+        }
+        .searchicon{
+            position: absolute;
+            right: 15px;
+            top: 25%;
+            cursor: pointer;
+        }
+    }
+    .searchbox input{
+        width: 100%;
+        box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 5px; background-color: rgb(255, 255, 255); 
+        border: unset;
+        padding: 10px 15px;
+        outline: unset;
+    }
+    .banner{
+        width: 100%;
+        img{
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
+    
+}

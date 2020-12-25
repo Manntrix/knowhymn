@@ -1,0 +1,28 @@
+.songcard{
+    box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .artist, .songtime{
+        color: #777777;
+        font-size: 11px;
+    }
+    svg{
+        &:first-child{
+            color:  #ecc707;
+           
+        }
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .songtitle{
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+    }
+}
